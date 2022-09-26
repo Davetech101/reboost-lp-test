@@ -12,9 +12,9 @@ const Header = () => {
       <div className={showNav && "move"}>
         <button className="contact-btn">Contact</button>
 
-        <button onClick={() => setShowNav(true)}>
+        {!showNav && <button onClick={() => setShowNav(true)}>
           <Hamburger/>
-        </button>
+        </button>}
       </div>
 
       <Nav show={showNav} setShowNav={setShowNav}/>

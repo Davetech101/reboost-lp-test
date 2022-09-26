@@ -1,6 +1,10 @@
 import { useState } from "react";
 import Arrow from "../assets/Arrow";
 import Close from "../assets/Close";
+import Facebook from "../assets/Facebook";
+import Instagram from "../assets/Instagram";
+import LinkedIn from "../assets/LinkedIn";
+import Twitter from "../assets/Twitter";
 
 const Nav = ({ show, setShowNav }) => {
   const [showServices, setShowServices] = useState(false);
@@ -36,17 +40,28 @@ const Nav = ({ show, setShowNav }) => {
               }
             >
               {item}{" "}
-              <span className={showServices ? "arrow rotate" : "arrow"}>{item === "Services" && <Arrow />}</span>
+              <span className={showServices ? "arrow rotate" : "arrow"}>
+                {item === "Services" && <Arrow />}
+              </span>
             </button>
 
-            {item === "Services" && showServices && <ul className="services">
-              {services.map((service) => (
-                <li key={service}>{service}</li>
-              ))}
-            </ul>}
+            {item === "Services" && showServices && (
+              <ul className="services">
+                {services.map((service) => (
+                  <li key={service}>{service}</li>
+                ))}
+              </ul>
+            )}
           </li>
         ))}
       </ul>
+
+      <div>
+        <button><Twitter/></button>
+        <button><Instagram/></button>
+        <button><Facebook/></button>
+        <button><LinkedIn/></button>
+      </div>
     </nav>
   );
 };

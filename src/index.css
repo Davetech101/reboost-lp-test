@@ -33,7 +33,7 @@ header{
 }
 
 header img{
-    width: 30rem;
+    width: 25rem;
     padding-left:8rem;
     padding: 1rem 0 0 4rem;
 }
@@ -108,4 +108,8 @@ nav .arrow{
 
 nav .rotate{
     transform: rotate(180deg);
+}
+
+nav > div{
+   margin-top: 15rem;
 }
