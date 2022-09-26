@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0;
+    background: none;
+    border: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background:black;
+    padding:4rem 8rem;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+
+header img{
+    width: 30rem;
+}
+
+header > div{
+    display: flex;
+    gap:4rem;
+    align-items: center;
+}
+
+header .contact-btn{
+    background-color: blue;
+    color: #fff;
+    padding:1rem 2rem;
+    border-radius: 2px;
+}
+
+header .contact-btn:hover{
+    background-color: #fff;
+    color:blue;
+}

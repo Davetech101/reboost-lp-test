@@ -1,9 +1,20 @@
+import Hamburger from "../assets/Hamburger";
+import logo from "../assets/reboost-logo.7a83de35.png";
+
 const Header = () => {
   return (
-    <div>
+    <header>
+      <img src={logo} alt="logo" />
 
-    </div>
-  )
-}
+      <div>
+        <button className="contact-btn">Contact</button>
 
-export default Header
+        <button>
+          <Hamburger />
+        </button>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
