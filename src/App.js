@@ -1,3 +1,4 @@
+import AboutSection from "./components/AboutSection";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import OurWork from "./components/OurWork";
@@ -13,6 +14,8 @@ function App() {
       <ServicesSection/>
 
       <OurWork/>
+
+      <AboutSection/>
     </>
   );
 }

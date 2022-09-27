@@ -294,6 +294,7 @@ nav > div {
 
 .servicesSection .services > div {
   border: 1px solid rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
   width: 100%;
   padding: 4rem 2rem;
 }
@@ -375,4 +376,29 @@ nav > div {
 
 .ourWorkSection .images img {
   width: 100%;
+}
+
+.aboutSection{
+  background-color: blue;
+  margin-top: 2rem;
+  padding: 1rem 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.aboutSection h1{
+  font-size: 4rem;
+}
+
+.aboutSection p{
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin: 3rem 0;
+}
+
+.aboutSection button{
+  background-color: #fff;
+  color: black;
+  padding: 2rem 4rem;
+  border-radius: 4px;
 }
