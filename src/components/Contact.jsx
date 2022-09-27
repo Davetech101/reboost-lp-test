@@ -15,7 +15,7 @@ const Contact = ({show, setShowContact}) => {
         <h1>Contact</h1>
 
         <p>
-          Get in touch with Reboost by using any of the methods available on
+          Get in touch with Reboost by using any of the methods <br /> available on
           this page.
         </p>
       </div>

@@ -5,6 +5,7 @@
     border: none;
     list-style-type: none;
     outline: none;
+    box-sizing: border-box;
 }
 
 button{
@@ -135,7 +136,7 @@ nav > div{
     z-index: 12;
     top:0;
     left: 0;
-    padding: 6rem;
+    padding:10rem 6rem;
     transition: all .6s;
     transform: translateX(100vw);
     visibility: hidden;
@@ -149,7 +150,7 @@ nav > div{
 .contactPage .close{
     position: absolute;
     top: 6rem;
-    right: 20rem;
+    right: 10rem;
 }
 
 .contactPage h1{
@@ -158,14 +159,13 @@ nav > div{
 
 .contactPage p{
     font-size: 2rem;
-    padding: 3rem 85rem 0 0;
+    padding: 3rem 0;
 }
 
 .contactPage main{
-   margin-top: 8rem;
    display: flex;
    justify-content: space-between;
-   padding-right: 24rem;
+   padding-right: 8rem;
 }
 
 .contactPage .border{
@@ -217,7 +217,7 @@ nav > div{
 }
 
 .heroSection{
-    height:50vh;
+    height:90vh;
     background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0.673)),  url(./assets/HeroBackground.d79a9315.webp);
     background-size: cover;
     background-position: center;
@@ -258,4 +258,63 @@ nav > div{
     gap: 1rem;
     border-radius: 8px;
     padding: 1.5rem;
+}
+
+.servicesSection{
+    color: black;
+    padding:10rem 14rem;
+}
+
+.servicesSection h1{
+    font-size: 4rem;
+}
+
+.servicesSection strong{
+    padding: 3rem 0 0 0;
+    font-size: 2rem;
+    font-weight: lighter;
+    border-bottom: 1px solid ;
+    width: 100%;
+    display: block;
+    text-align: end;
+}
+
+.servicesSection .services{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    gap: 2rem;
+    margin-top: 7rem;
+}
+
+.servicesSection .services > div{
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    width: 100%;
+    padding: 4rem 2rem;
+}
+
+.servicesSection .services h3{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.servicesSection .services .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicesSection .services p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 3rem 0 5rem 0;
+    line-height: 2.5rem;
+}
+
+.servicesSection .services button{
+    background-color: blue;
+    color: white;
+    padding: 1.5rem 3rem;
+    border-radius: 5px;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.193);
 }
