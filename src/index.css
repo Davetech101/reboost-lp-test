@@ -402,3 +402,37 @@ nav > div {
   padding: 2rem 4rem;
   border-radius: 4px;
 }
+
+.blogSection{
+  color: black;
+  padding:8rem 6rem;
+}
+
+.blogSection main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  box-shadow:0 0 2rem rgba(0, 0, 0, 0.19);
+  border-radius: 4rem;
+  overflow: hidden;
+  height: 60vh;
+}
+
+.blogSection main > div{
+  padding: 4rem;
+}
+
+.blogSection h1{
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.blogSection p{
+  line-height: 2rem;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.blogSection img{
+  object-fit: cover;
+}

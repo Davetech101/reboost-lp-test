@@ -1,4 +1,5 @@
 import AboutSection from "./components/AboutSection";
+import BlogSection from "./components/BlogSection";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import OurWork from "./components/OurWork";
@@ -16,6 +17,8 @@ function App() {
       <OurWork/>
 
       <AboutSection/>
+
+      <BlogSection/>
     </>
   );
 }
