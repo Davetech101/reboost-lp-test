@@ -1,10 +1,7 @@
 import { useState } from "react";
 import Arrow from "../assets/Arrow";
 import Close from "../assets/Close";
-import Facebook from "../assets/Facebook";
-import Instagram from "../assets/Instagram";
-import LinkedIn from "../assets/LinkedIn";
-import Twitter from "../assets/Twitter";
+import SocialNavs from "./SocialNavs";
 
 const Nav = ({ show, setShowNav }) => {
   const [showServices, setShowServices] = useState(false);
@@ -26,7 +23,7 @@ const Nav = ({ show, setShowNav }) => {
   ];
 
   return (
-    <nav className={show && "show"}>
+    <nav className={show ? "show" : ""}>
       <button className="close" onClick={() => setShowNav(false)}>
         <Close />
       </button>
@@ -56,12 +53,7 @@ const Nav = ({ show, setShowNav }) => {
         ))}
       </ul>
 
-      <div>
-        <button><Twitter/></button>
-        <button><Instagram/></button>
-        <button><Facebook/></button>
-        <button><LinkedIn/></button>
-      </div>
+      <SocialNavs/>
     </nav>
   );
 };
