@@ -21,9 +21,8 @@ html{
 }
 
 body{
-    background:black;
-    padding:4rem;
-    overflow-x: none;
+    color: #fff;
+    overflow-x: hidden;
 }
 
 .socialNav{
@@ -41,12 +40,12 @@ header{
     left: 0;
     right: 0;
     transition: all .6s;
+    z-index: 7777;
 }
 
 header img{
     width: 25rem;
-    padding-left:8rem;
-    padding: 1rem 0 0 4rem;
+    padding: 2rem 0 0 8rem;
 }
 
 header .call-to-action{
@@ -54,7 +53,7 @@ header .call-to-action{
     gap:4rem;
     align-items: center;
     padding-top: 4rem;
-    padding-right: 4rem;
+    padding-right: 8rem;
 }
 
 header .contact-btn{
@@ -215,4 +214,48 @@ nav > div{
     gap: 2rem;
     padding: 1rem 0;
     font-size: 1.8rem;
+}
+
+.heroSection{
+    height:50vh;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0.673)),  url(./assets/HeroBackground.d79a9315.webp);
+    background-size: cover;
+    background-position: center;
+    padding:14rem 8rem;
+}
+
+.heroSection h1{
+    font-size: 6rem;
+}
+
+.heroSection p{
+    font-size: 2rem;
+    padding-right: 22rem;
+    margin: 4rem 0 2rem 0;
+    font-weight: lighter;
+}
+
+.heroSection strong{
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: lighter;
+}
+
+.heroSection button{
+    background-color: blue;
+    color: #fff;
+    padding:2rem 3.5rem;
+    border-radius: 2px;
+}
+
+.heroSection .book{
+    position: absolute;
+    bottom: 12rem;
+    right: 6rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 8px;
+    padding: 1.5rem;
 }
