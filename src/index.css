@@ -1,320 +1,378 @@
-*{
-    padding:0;
-    margin:0;
-    background: none;
-    border: none;
-    list-style-type: none;
-    outline: none;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  list-style-type: none;
+  outline: none;
+  box-sizing: border-box;
 }
 
-button{
-    cursor: pointer;
-    color: inherit;
+button {
+  cursor: pointer;
+  color: inherit;
 }
 
-button:active{
-    transform: scale(.95);
+button:active {
+  transform: scale(0.95);
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    color: #fff;
-    overflow-x: hidden;
+body {
+  color: #fff;
+  overflow-x: hidden;
 }
 
-.socialNav{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+.socialNav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
-header{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: all .6s;
-    z-index: 7777;
+header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.6s;
+  z-index: 7777;
 }
 
-header img{
-    width: 25rem;
-    padding: 2rem 0 0 8rem;
+header img {
+  width: 25rem;
+  padding: 2rem 0 0 8rem;
 }
 
-header .call-to-action{
-    display: flex;
-    gap:4rem;
-    align-items: center;
-    padding-top: 4rem;
-    padding-right: 8rem;
+header .call-to-action {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  padding-top: 4rem;
+  padding-right: 8rem;
 }
 
-header .contact-btn{
-    background-color: blue;
-    color: #fff;
-    padding:1rem 2rem;
-    border-radius: 2px;
+header .contact-btn {
+  background-color: blue;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 2px;
 }
 
-header .contact-btn:hover{
-    background-color: #fff;
-    color:blue;
+header .contact-btn:hover {
+  background-color: #fff;
+  color: blue;
 }
 
-nav{
-    color: white;
-    background-color: blue;
-    padding: 4rem 2rem;
-    height: 100vh;
-    width:25vw;
-    position: relative;
-    transform: translateX(40rem);
-    visibility: hidden;
-    opacity: 0;
-    transition: all .6s;
-    position: fixed;
-    right: 0;
+nav {
+  color: white;
+  background-color: blue;
+  padding: 4rem 2rem;
+  height: 100vh;
+  width: 25vw;
+  position: relative;
+  transform: translateX(40rem);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.6s;
+  position: fixed;
+  right: 0;
 }
 
-nav.show{
-    transform: translateX(0);
-    visibility: visible;
-    opacity: 1;
+nav.show {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
 }
 
-nav .close{
-    position: absolute;
-    right: 2rem;
-    top: 3rem;
+nav .close {
+  position: absolute;
+  right: 2rem;
+  top: 3rem;
 }
 
-nav ul{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-nav button{
-    font-size: 3rem;
-    padding: 1rem 1.5rem;
-    border-radius: 1rem;
+nav button {
+  font-size: 3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
 }
 
-nav .services li{
+nav .services li {
   font-size: 1.5rem;
   padding: 0 1.5rem;
 }
 
-nav .arrow{
-    display: inline-block;
-    transition: all .6s;
-    transform-origin: center;
+nav .arrow {
+  display: inline-block;
+  transition: all 0.6s;
+  transform-origin: center;
 }
 
-nav .rotate{
-    transform: rotate(180deg);
+nav .rotate {
+  transform: rotate(180deg);
 }
 
-nav > div{
-   margin-top: 15rem;
+nav > div {
+  margin-top: 15rem;
 }
 
-.contactPage{
-    position: fixed;
-    background-color: blue;
-    color: #fff;
-    width: 100vw;
-    height: 100vh;
-    z-index: 12;
-    top:0;
-    left: 0;
-    padding:10rem 6rem;
-    transition: all .6s;
-    transform: translateX(100vw);
-    visibility: hidden;
+.contactPage {
+  position: fixed;
+  background-color: blue;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  padding: 10rem 6rem;
+  transition: all 0.6s;
+  transform: translateX(100vw);
+  visibility: hidden;
 }
 
-.contactPage.show{
-    transform: translateX(0);
-    visibility: visible;
+.contactPage.show {
+  transform: translateX(0);
+  visibility: visible;
 }
 
-.contactPage .close{
-    position: absolute;
-    top: 6rem;
-    right: 10rem;
+.contactPage .close {
+  position: absolute;
+  top: 6rem;
+  right: 10rem;
 }
 
-.contactPage h1{
-    font-size: 4rem;
+.contactPage h1 {
+  font-size: 4rem;
 }
 
-.contactPage p{
-    font-size: 2rem;
-    padding: 3rem 0;
+.contactPage p {
+  font-size: 2rem;
+  padding: 3rem 0;
 }
 
-.contactPage main{
-   display: flex;
-   justify-content: space-between;
-   padding-right: 8rem;
+.contactPage main {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 8rem;
 }
 
-.contactPage .border{
-    height: 35rem;
-    width:1px;
-    background-color: #fff;
+.contactPage .border {
+  height: 35rem;
+  width: 1px;
+  background-color: #fff;
 }
 
-.contactPage input{
-    display: block;
-    padding: 1rem;
-    border-bottom:1px solid #fff;
-    font-size: 2rem;
-    caret-color: #fff;
-    width: 40rem;
-    margin-top: 2rem;
-    color: #fff;
+.contactPage input {
+  display: block;
+  padding: 1rem;
+  border-bottom: 1px solid #fff;
+  font-size: 2rem;
+  caret-color: #fff;
+  width: 40rem;
+  margin-top: 2rem;
+  color: #fff;
 }
 
-.contactPage input::placeholder{
-    color:rgba(255, 255, 255, 0.652);
+.contactPage input::placeholder {
+  color: rgba(255, 255, 255, 0.652);
 }
 
-.contactPage form button{
-    background: #fff;
-    box-shadow: 3px 3px 10.px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-    color: black;
-    padding:1.5rem 2rem;
-    margin-top: 3rem;
+.contactPage form button {
+  background: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  color: black;
+  padding: 1.5rem 2rem;
+  margin-top: 3rem;
 }
 
-.contactPage .contacts{
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
+.contactPage .contacts {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.contactPage .contacts aside{
-    margin-bottom: 4rem;
+.contactPage .contacts aside {
+  margin-bottom: 4rem;
 }
 
-.contactPage .contacts .contact{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding: 1rem 0;
-    font-size: 1.8rem;
+.contactPage .contacts .contact {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  font-size: 1.8rem;
 }
 
-.heroSection{
-    height:90vh;
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0.673)),  url(./assets/HeroBackground.d79a9315.webp);
-    background-size: cover;
-    background-position: center;
-    padding:14rem 8rem;
+.heroSection {
+  height: 90vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.673),
+      rgba(0, 0, 0, 0.673)
+    ),
+    url(./assets/HeroBackground.d79a9315.webp);
+  background-size: cover;
+  background-position: center;
+  padding: 14rem 8rem;
 }
 
-.heroSection h1{
-    font-size: 6rem;
+.heroSection h1 {
+  font-size: 6rem;
 }
 
-.heroSection p{
-    font-size: 2rem;
-    padding-right: 22rem;
-    margin: 4rem 0 2rem 0;
-    font-weight: lighter;
+.heroSection p {
+  font-size: 2rem;
+  padding-right: 22rem;
+  margin: 4rem 0 2rem 0;
+  font-weight: lighter;
 }
 
-.heroSection strong{
-    display: block;
-    font-size: 2rem;
-    margin-bottom: 4rem;
-    font-weight: lighter;
+.heroSection strong {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  font-weight: lighter;
 }
 
-.heroSection button{
-    background-color: blue;
-    color: #fff;
-    padding:2rem 3.5rem;
-    border-radius: 2px;
+.heroSection button {
+  background-color: blue;
+  color: #fff;
+  padding: 2rem 3.5rem;
+  border-radius: 2px;
 }
 
-.heroSection .book{
-    position: absolute;
-    bottom: 12rem;
-    right: 6rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 8px;
-    padding: 1.5rem;
+.heroSection .book {
+  position: absolute;
+  bottom: 12rem;
+  right: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 8px;
+  padding: 1.5rem;
 }
 
-.servicesSection{
-    color: black;
-    padding:10rem 14rem;
+.servicesSection {
+  color: black;
+  padding: 10rem 14rem;
 }
 
-.servicesSection h1{
-    font-size: 4rem;
+.servicesSection h1 {
+  font-size: 4rem;
 }
 
-.servicesSection strong{
-    padding: 3rem 0 0 0;
-    font-size: 2rem;
-    font-weight: lighter;
-    border-bottom: 1px solid ;
-    width: 100%;
-    display: block;
-    text-align: end;
+.servicesSection strong {
+  padding: 3rem 0 0 0;
+  font-size: 2rem;
+  font-weight: lighter;
+  border-bottom: 1px solid;
+  width: 100%;
+  display: block;
+  text-align: end;
 }
 
-.servicesSection .services{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 2rem;
-    gap: 2rem;
-    margin-top: 7rem;
+.servicesSection .services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  gap: 2rem;
+  margin-top: 7rem;
 }
 
-.servicesSection .services > div{
-    border: 1px solid rgba(0, 0, 0, 0.19);
-    width: 100%;
-    padding: 4rem 2rem;
+.servicesSection .services > div {
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  width: 100%;
+  padding: 4rem 2rem;
 }
 
-.servicesSection .services h3{
-    font-size: 2.5rem;
-    font-weight: bolder;
+.servicesSection .services h3 {
+  font-size: 2.5rem;
+  font-weight: bolder;
 }
 
-.servicesSection .services .head{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.servicesSection .services .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.servicesSection .services p{
-    font-size: 1.5rem;
-    font-weight: lighter;
-    margin: 3rem 0 5rem 0;
-    line-height: 2.5rem;
+.servicesSection .services p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 3rem 0 5rem 0;
+  line-height: 2.5rem;
 }
 
-.servicesSection .services button{
-    background-color: blue;
-    color: white;
-    padding: 1.5rem 3rem;
-    border-radius: 5px;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.193);
+.servicesSection .services button {
+  background-color: blue;
+  color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 5px;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.193);
+}
+
+.ourWorkSection {
+  color: black;
+  padding: 5rem 8rem;
+}
+
+.ourWorkSection .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6rem;
+}
+
+.ourWorkSection h1 {
+  font-size: 4rem;
+}
+
+.ourWorkSection .buttons {
+  display: flex;
+  gap: 4rem;
+}
+
+.ourWorkSection .images {
+  overflow: hidden;
+  margin-top: 5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.ourWorkSection .images:hover::after {
+  background-color: rgba(0, 0, 0, 0.382);
+}
+
+.ourWorkSection .images::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.262);
+  height: 100%;
+  width: 100%;
+}
+
+.ourWorkSection .cont {
+  display: flex;
+  align-items: center;
+  transition: all 1s;
+  position: relative;
+}
+
+.ourWorkSection .images img {
+  width: 100%;
 }
