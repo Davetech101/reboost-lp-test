@@ -1,5 +1,5 @@
 import logo from "../assets/reboost-logo.png";
-import footerImg from "../assets/footerLogo.png"
+import footerImg from "../assets/footerLogo.png";
 import SocialNavs from "./SocialNavs";
 
 const Footer = () => {
@@ -39,7 +39,7 @@ const Footer = () => {
           </small>
         </nav>
 
-        <img src={footerImg} alt="" className="img"/>
+        <img src={footerImg} alt="" className="img" />
       </main>
     </footer>
   );

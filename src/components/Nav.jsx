@@ -53,7 +53,9 @@ const Nav = ({ show, setShowNav }) => {
         ))}
       </ul>
 
-      <SocialNavs/>
+      <div className="socials">
+        <SocialNavs />
+      </div>
     </nav>
   );
 };

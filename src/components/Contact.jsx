@@ -5,7 +5,7 @@ import Phone from "../assets/Phone";
 import Whatsapp from "../assets/Whatsapp";
 import SocialNavs from "./SocialNavs";
 
-const Contact = ({show, setShowContact}) => {
+const Contact = ({ show, setShowContact }) => {
   return (
     <div className={show ? "contactPage show" : "contactPage"}>
       <button className="close" onClick={() => setShowContact(false)}>
@@ -15,8 +15,8 @@ const Contact = ({show, setShowContact}) => {
         <h1>Contact</h1>
 
         <p>
-          Get in touch with Reboost by using any of the methods <br /> available on
-          this page.
+          Get in touch with Reboost by using any of the methods <br /> available
+          on this page.
         </p>
       </div>
 

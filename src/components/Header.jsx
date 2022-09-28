@@ -11,7 +11,7 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (document.body.getBoundingClientRect().top <= -90) {
+      if (document.body.getBoundingClientRect().top <= -50) {
         setScrolled(true);
       } else {
         setScrolled(false);

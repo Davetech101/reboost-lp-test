@@ -1,5 +1,3 @@
-import blogImg from "../assets/blog-img.jpg";
-
 const BlogSection = () => {
   return (
     <section className="blogSection">
@@ -20,7 +18,7 @@ const BlogSection = () => {
           <p>Delve into our way of thinking within our blog.</p>
         </div>
 
-        <img src={blogImg} alt="" />
+        <div className="img"></div>
       </main>
     </section>
   );

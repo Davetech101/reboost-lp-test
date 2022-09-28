@@ -45,7 +45,7 @@ header {
   padding-bottom: 4rem;
 }
 
-header.scroll{
+header.scroll {
   background-color: rgba(0, 0, 0, 0.462);
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
 }
@@ -224,7 +224,7 @@ header nav > div {
 }
 
 .heroSection {
-  height: 90vh;
+  height: 95%;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.673),
@@ -233,7 +233,8 @@ header nav > div {
     url(./assets/HeroBackground.d79a9315.webp);
   background-size: cover;
   background-position: center;
-  padding: 14rem 8rem;
+  padding: 10rem 8rem;
+  position: relative;
 }
 
 .heroSection h1 {
@@ -263,7 +264,7 @@ header nav > div {
 
 .heroSection .book {
   position: absolute;
-  bottom: 12rem;
+  bottom: 5rem;
   right: 6rem;
   display: flex;
   align-items: center;
@@ -415,6 +416,12 @@ header nav > div {
   padding: 8rem 6rem;
 }
 
+.blogSection .img {
+  background-image: url(./assets/blog-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .blogSection main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -422,7 +429,7 @@ header nav > div {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.088);
   border-radius: 4rem;
   overflow: hidden;
-  height: 60vh;
+  height: 55vh;
 }
 
 .blogSection main > div {
@@ -474,7 +481,9 @@ footer input {
   padding: 1rem;
   width: 100%;
   color: #fff;
+  z-index: 10;
   margin: 2rem 0;
+  position: relative;
 }
 
 footer form button {
@@ -505,29 +514,436 @@ footer .logo img {
   width: 20rem;
 }
 
-footer nav{
+footer nav {
   color: rgba(255, 255, 255, 0.829);
   text-align: right;
 }
 
-footer h5{
+footer h5 {
   font-size: 1.8rem;
   margin-bottom: 3rem;
   color: #fff;
 }
 
-footer nav li button{
+footer nav li button {
   margin: 1rem 0;
   font-size: 1.6rem;
 }
 
-footer nav small{
+footer nav small {
   font-size: 1.5rem;
   margin-top: 2rem;
   display: block;
+  max-width: 20rem;
 }
 
-footer .img{
+footer .img {
   position: absolute;
   bottom: 0;
+}
+
+@media only screen and (max-width: 1100px) {
+  header img {
+    padding: 2rem 0 0 4rem;
+  }
+
+  header .call-to-action {
+    padding-right: 4rem;
+  }
+
+  header nav {
+    padding: 2.5rem 1rem;
+    width: 26vw;
+  }
+
+  header nav .close {
+    right: 1rem;
+    top: 2rem;
+  }
+
+  header nav button {
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .contactPage {
+    padding: 5rem;
+  }
+
+  .heroSection {
+    padding: 10rem 3rem;
+  }
+
+  .heroSection p {
+    padding-right: 15rem;
+  }
+
+  .servicesSection {
+    padding: 3rem 3rem;
+  }
+
+  .servicesSection .services > div {
+    padding: 2rem 2rem;
+  }
+
+  .ourWorkSection {
+    padding: 3rem 3rem;
+  }
+
+  .aboutSection {
+    padding: 0rem 3rem;
+  }
+
+  .aboutSection p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 1.5rem 0;
+  }
+
+  .aboutSection button {
+    padding: 1rem 2rem;
+  }
+
+  .blogSection {
+    padding: 6rem 3rem;
+  }
+
+  .blogSection main {
+    height: 45vh;
+  }
+
+  .blogSection main > div {
+    padding: 2rem;
+  }
+
+  footer {
+    padding: 6rem 3rem;
+  }
+
+  footer main {
+    padding: 5rem;
+  }
+
+  footer input {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  header nav {
+    width: 100%;
+  }
+
+  header nav > div {
+    margin-top: 10rem;
+  }
+
+  .contactPage {
+    padding: 6rem;
+  }
+
+  .contactPage h1 {
+    font-size: 3.5rem;
+  }
+
+  .contactPage p {
+    font-size: 2rem;
+    padding: 3rem 0;
+  }
+
+  .contactPage main {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+  }
+
+  .heroSection {
+    padding: 10rem 3rem;
+  }
+
+  .aboutSection {
+    padding: 2rem;
+  }
+
+  .aboutSection img {
+    width: 30%;
+  }
+
+  footer .logo {
+    left: 60%;
+  }
+}
+
+@media only screen and (max-width: 866px) {
+  footer .img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header nav button {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+  }
+
+  header .contact-btn {
+    display: none;
+  }
+
+  .aboutSection {
+    margin-top: 2rem;
+    padding: 3rem 4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .aboutSection h1 {
+    font-size: 4rem;
+  }
+
+  .aboutSection p {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin: 2.3rem 0;
+  }
+
+  .aboutSection button {
+    padding: 1.5rem 3rem;
+  }
+
+  .aboutSection img {
+    display: none;
+  }
+
+  .blogSection {
+    color: black;
+    padding: 6rem 4rem;
+  }
+
+  .blogSection .img {
+    height: 100%;
+  }
+
+  .blogSection main {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 85vh;
+  }
+
+  .blogSection main > div {
+    padding-bottom: 6rem;
+  }
+
+  .blogSection h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .blogSection p {
+    line-height: 1.6rem;
+    font-size: 1.8rem;
+  }
+
+  footer main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 50px;
+    padding: 4rem;
+  }
+
+  footer form {
+    margin-top: 10rem;
+    width: 60%;
+    text-align: center;
+  }
+
+  footer input {
+    width: 100%;
+  }
+
+  footer form button {
+    padding: 1rem 2rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer .logo {
+    left: 50%;
+  }
+
+  footer nav {
+    color: rgba(255, 255, 255, 0.829);
+    text-align: left;
+    width: 60%;
+  }
+
+  footer h5 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  footer nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  footer nav small {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    display: block;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  footer .img {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .heroSection h1 {
+    font-size: 4rem;
+  }
+
+  .heroSection p {
+    font-size: 1.8rem;
+    padding-right: 5rem;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .heroSection strong {
+    margin-bottom: 3rem;
+  }
+
+  .heroSection button {
+    padding: 1.5rem 2.5rem;
+  }
+
+  .heroSection .book {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .servicesSection h1 {
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+
+  .servicesSection strong {
+    padding: 3rem 0 0 0;
+    font-size: 2rem;
+    font-weight: lighter;
+    border-bottom: 1px solid;
+    width: 100%;
+    display: block;
+    text-align: end;
+  }
+
+  .servicesSection .services {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    gap: 2rem;
+    margin-top: 7rem;
+  }
+
+  .servicesSection .services > div {
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+
+  .servicesSection .services h3 {
+    font-size: 2.3rem;
+    font-weight: bolder;
+  }
+
+  .servicesSection .services p {
+    margin: 1rem 0 2rem 0;
+    line-height: 2rem;
+  }
+
+  .servicesSection .services button {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heroSection .book {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    padding-bottom: 1rem;
+  }
+
+  header img {
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+
+  header .call-to-action {
+    padding-right: 1rem;
+  }
+
+  .heroSection {
+    padding: 10rem 1rem 4rem;
+  }
+
+  .heroSection p {
+    padding: unset;
+  }
+
+  .servicesSection {
+    padding: 2rem 1rem;
+  }
+
+  .servicesSection .services {
+    margin-top: 4rem;
+  }
+
+  .servicesSection strong {
+    padding-top: 1rem;
+  }
+
+  .ourWorkSection {
+    padding: 2rem 1rem;
+  }
+
+  .ourWorkSection .head {
+    padding: unset;
+  }
+
+  .aboutSection {
+    padding: 2rem 1rem;
+  }
+
+  .blogSection {
+    padding: 2rem 1rem;
+  }
+
+  .blogSection main > div {
+    padding-bottom: 4rem;
+  }
+
+  .blogSection main h1 {
+    margin-top: -4rem;
+  }
+
+  footer {
+    padding: 2rem 1rem;
+  }
+
+  footer form {
+    display: none;
+  }
+
+  footer nav {
+    margin-top: 10rem;
+  }
 }

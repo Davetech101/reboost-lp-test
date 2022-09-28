@@ -3,7 +3,9 @@ import Phone from "../assets/Phone";
 const HeroSection = () => {
   return (
     <section className="heroSection">
-      <h1>Boost your <br /> business.</h1>
+      <h1>
+        Boost your <br /> business.
+      </h1>
 
       <p>
         Our global team with their fine expertise will deliver a wider outlook
@@ -17,7 +19,9 @@ const HeroSection = () => {
 
       <button>Find out more</button>
 
-      <button className="book">Book a free 15-minute <br /> consultation today. <Phone/></button>
+      <button className="book">
+        Book a free 15-minute <br /> consultation today. <Phone />
+      </button>
     </section>
   );
 };

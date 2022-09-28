@@ -1,4 +1,4 @@
-import logo from "../assets/about-logo.png"
+import logo from "../assets/about-logo.png";
 
 const AboutSection = () => {
   return (

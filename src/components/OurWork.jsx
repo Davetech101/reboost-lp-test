@@ -46,7 +46,10 @@ const OurWork = () => {
       </div>
 
       <div className="images">
-        <div className="cont" style={{transform: `translateX(calc(-100 * ${imgIdx}%))`}}>
+        <div
+          className="cont"
+          style={{ transform: `translateX(calc(-100 * ${imgIdx}%))` }}
+        >
           {images.map((img) => (
             <img src={img} alt="" key={img} />
           ))}

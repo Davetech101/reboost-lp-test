@@ -9,19 +9,19 @@ import ServicesSection from "./components/ServicesSection";
 function App() {
   return (
     <>
-      <Header/>
+      <Header />
 
-      <HeroSection/>
+      <HeroSection />
 
-      <ServicesSection/>
+      <ServicesSection />
 
-      <OurWork/>
+      <OurWork />
 
-      <AboutSection/>
+      <AboutSection />
 
-      <BlogSection/>
+      <BlogSection />
 
-      <Footer/>
+      <Footer />
     </>
   );
 }
