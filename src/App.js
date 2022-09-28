@@ -1,5 +1,6 @@
 import AboutSection from "./components/AboutSection";
 import BlogSection from "./components/BlogSection";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import OurWork from "./components/OurWork";
@@ -19,6 +20,8 @@ function App() {
       <AboutSection/>
 
       <BlogSection/>
+
+      <Footer/>
     </>
   );
 }

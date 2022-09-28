@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Hamburger from "../assets/Hamburger";
-import logo from "../assets/reboost-logo.7a83de35.png";
+import logo from "../assets/reboost-logo.png";
 import Contact from "./Contact";
 import Nav from "./Nav";
 
