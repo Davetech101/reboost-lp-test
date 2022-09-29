@@ -24,7 +24,7 @@ const Contact = ({ show, setShowContact }) => {
         <form>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="E-mail address" />
-          <input type="text" placeholder="How can we help" />
+          <input type="text" placeholder="How can we help" className="text"/>
 
           <button>Submit from</button>
         </form>

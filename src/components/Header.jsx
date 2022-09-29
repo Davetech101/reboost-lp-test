@@ -21,12 +21,12 @@ const Header = () => {
 
   return (
     <header
-      style={{ width: showNav ? "80%" : "100%" }}
+      style={{ width: showNav ? "70%" : "100%" }}
       className={scrolled ? "scroll" : ""}
     >
       <img src={logo} alt="logo" />
 
-      <div className="move call-to-action">
+      <div className="move call-to-action" style={{ marginTop: showNav ? "2rem" : "0" }}>
         <button className="contact-btn" onClick={() => setShowContact(true)}>
           Contact
         </button>
@@ -34,6 +34,7 @@ const Header = () => {
         {!showNav && (
           <button onClick={() => setShowNav(true)}>
             <Hamburger />
+            <img src="" alt="" />
           </button>
         )}
       </div>
